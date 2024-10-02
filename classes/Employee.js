@@ -31,7 +31,7 @@ class Employee {
     }
     promote(newJobTitle = this.position, newSalary = this.getSalary()){
         this.position = newJobTitle;
-        this.#salary = newSalary;
+        this.setSalary(newSalary);
     }
     static getEmployees(){
         return Employee.#allEmployees;
